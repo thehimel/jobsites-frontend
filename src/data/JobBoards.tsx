@@ -10,6 +10,21 @@ export const jobBoards: JobBoards = {
     name: "LinkedIn",
     urls: {base: "https://www.linkedin.com/", countries: RegionalUrls("linkedin", "com", countryCodes)},
   },
+  monster: {
+    name: "Monster",
+    urls: {
+      base: "https://www.monster.com/",
+      countries: {
+        at: "https://www.monster.at/",
+        ca: "https://www.monster.ca/",
+        ch: "https://www.monster.ch/",
+        de: "https://www.monster.de/",
+        se: "https://www.monster.se/",
+        uk: "https://www.monster.co.uk/",
+        us: "https://www.monster.com/"
+      }
+    },
+  },
   careerbuilder: {
     name: "CareerBuilder",
     urls: {
