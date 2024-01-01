@@ -1,6 +1,6 @@
 import {jobBoards} from "./JobBoards.ts";
 
-export const topJobBoards = {
+export const topJobBoards: TopJobBoards = {
   us: [
     jobBoards.indeed,
     jobBoards.linkedin,
