@@ -63,4 +63,15 @@ export const jobBoards: JobBoards = {
       },
     },
   },
+  getwork: {
+    name: "Getwork",
+    urls: {
+      base: "https://www.getwork.com/",
+      countries: {
+        ca: "https://canada.getwork.com/",
+        uk: "https://uk.getwork.com/",
+        us: "https://www.getwork.com/",
+      },
+    },
+  },
 };
