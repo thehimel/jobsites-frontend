@@ -17,11 +17,7 @@ const CountrySlice = createSlice({
   reducers: {
     updateCountries(state, action) {
       const prefix: string = action.payload;
-      if (prefix.length > 0) {
-        state.countries = filterCountriesByPrefix(prefix);
-      } else {
-        state.countries = allCountries;
-      }
+      state.countries = prefix.length > 0 ? filterCountriesByPrefix(prefix) : allCountries;
     }
   },
 });
