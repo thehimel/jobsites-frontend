@@ -10,8 +10,8 @@ export default function SearchCountries() {
 
   return (
     <>
-      <form className="d-flex px-5 pt-5" role="search">
-        <input className="form-control me-2 text-center" type="search" placeholder="Search for a country..."
+      <form className="d-flex pt-3 px-3" role="search">
+        <input className="form-control text-center" type="search" placeholder="Search for a country..."
                aria-label="Search" onChange={handleChange}/>
       </form>
     </>
