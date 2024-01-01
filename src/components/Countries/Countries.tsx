@@ -1,7 +1,7 @@
 import Country from "./Country.tsx";
 import {useSelector} from "react-redux";
 import {rootState} from "../../constants/core.tsx";
-import {rowClasses} from "../Classes.ts";
+import {rowClasses} from "../Styles.ts";
 
 export default function Countries() {
   const countries = useSelector((state: rootState) => state.country.countries);

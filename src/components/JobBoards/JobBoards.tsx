@@ -1,6 +1,6 @@
 import {topJobBoards} from "../../data/TopJobBoards.ts";
 import JobBoard from "./JobBoard.tsx";
-import {rowClasses} from "../Classes.ts";
+import {rowClasses} from "../Styles.ts";
 
 interface JobBoardsProps {
   countryCode: string;
