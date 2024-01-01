@@ -3,11 +3,6 @@ export const capitalize = (str: string): string => {
 }
 
 export const filterArrayByWord = (elements: string[], word: string): string[] => {
-  const prefixLower = word.toLowerCase();
-  if (!word.length) {
-    return elements;
-  }
-  return elements
-    .filter(element => element.toLowerCase().includes(prefixLower))
-    .map(element => element);
+  const wordLower = word.toLowerCase();
+  return !word.length ? elements : elements.filter(element => element.toLowerCase().includes(wordLower));
 };
