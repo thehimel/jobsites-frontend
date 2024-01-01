@@ -74,4 +74,13 @@ export const jobBoards: JobBoards = {
       },
     },
   },
+  flexjobs: {
+    name: "Flexjobs",
+    urls: {
+      base: "https://www.flexjobs.com/",
+      countries: {
+        us: "https://www.flexjobs.com/",
+      },
+    },
+  },
 };
