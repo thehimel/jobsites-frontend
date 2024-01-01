@@ -25,6 +25,22 @@ export const jobBoards: JobBoards = {
       }
     },
   },
+  glassdoor: {
+    name: "Glassdoor",
+    urls: {
+      base: "https://www.glassdoor.com/Job/",
+      countries: {
+        at: "https://www.glassdoor.at/Job/",
+        au: "https://www.glassdoor.com.au/Job/",
+        ca: "https://www.glassdoor.ca/Job/",
+        ch: "https://de.glassdoor.ch/Job/",
+        de: "https://www.glassdoor.de/Job/",
+        in: "https://www.glassdoor.co.in/Job/",
+        uk: "https://www.glassdoor.co.uk/Job/",
+        us: "https://www.glassdoor.com/Job/",
+      },
+    },
+  },
   careerbuilder: {
     name: "CareerBuilder",
     urls: {
