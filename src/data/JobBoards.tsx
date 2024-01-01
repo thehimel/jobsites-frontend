@@ -1,6 +1,6 @@
-type Region = { [key: string]: string; }
-type Url = { base: string; region: Region }
-type JobBoard = { name: string; url: Url; }
+type Countries = { [key: string]: string; }
+type Urls = { base: string; countries: Countries }
+type JobBoard = { name: string; urls: Urls; }
 type JobBoardsProps = { [key: string]: JobBoard; }
 type Country = { [key: string]: string; }
 
@@ -35,16 +35,10 @@ function CountryUrls(domain: string, tld: string, countryCodes: string[]): Recor
 const jobBoards: JobBoardsProps = {
   indeed: {
     name: "Indeed",
-    url: {
-      base: "https://www.indeed.com/",
-      region: CountryUrls("indeed", "com", countryCodes)
-    },
+    urls: {base: "https://www.indeed.com/", countries: CountryUrls("indeed", "com", countryCodes)},
   },
   linkedin: {
     name: "LinkedIn",
-    url: {
-      base: "https://www.linkedin.com/",
-      region: CountryUrls("linkedin", "com", countryCodes)
-    },
+    urls: {base: "https://www.linkedin.com/", countries: CountryUrls("linkedin", "com", countryCodes)},
   },
 }
