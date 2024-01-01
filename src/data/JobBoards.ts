@@ -1,5 +1,5 @@
-import {countryCodes} from "./Countries.tsx";
-import {RegionalUrls} from "./scripts.tsx";
+import {countryCodes} from "./Countries.ts";
+import {RegionalUrls} from "./scripts.ts";
 
 export const jobBoards: JobBoards = {
   indeed: {
