@@ -1,5 +1,6 @@
 import {topJobBoards} from "../../data/TopJobBoards.ts";
 import JobBoard from "./JobBoard.tsx";
+import {rowClasses} from "../Classes.ts";
 
 interface JobBoardsProps {
   countryCode: string;
@@ -12,7 +13,7 @@ export default function JobBoards({countryCode}: JobBoardsProps) {
 
   return (
     <>
-      <div className="row align-items-md-stretch text-center g-0 p-2">
+      <div className={rowClasses}>
         {jobBoards}
       </div>
     </>
