@@ -10,7 +10,7 @@ export default function Countries() {
 
   return (
     <>
-      <div className="row align-items-md-stretch g-0 p-2">
+      <div className="row align-items-md-stretch text-center g-0 p-2">
         {countryButtons}
       </div>
     </>
