@@ -1,15 +1,10 @@
 import {createSlice} from '@reduxjs/toolkit';
 import {countries} from 'countries-list';
 import {slices} from "./slices.ts";
+import {filterArrayByWord} from "../scripts/utilities.tsx";
 
 const allCountries: string[] = Object.values(countries).map(country => country.name);
 
-const filterArrayByWord = (elements: string[], word: string): string[] => {
-  const prefixLower = word.toLowerCase();
-  return elements
-    .filter(element => element.toLowerCase().includes(prefixLower))
-    .map(element => element);
-};
 
 const CountrySlice = createSlice({
   name: slices.country,
@@ -17,7 +12,7 @@ const CountrySlice = createSlice({
   reducers: {
     updateCountries(state, action) {
       const word: string = action.payload;
-      state.countries = word.length > 0 ? filterArrayByWord(allCountries, word) : allCountries;
+      state.countries = filterArrayByWord(allCountries, word);
     }
   },
 });
