@@ -4,11 +4,11 @@ import {slices} from "./slices.ts";
 
 const allCountries: string[] = Object.values(countries).map(country => country.name);
 
-const filterCountriesByPrefix = (prefix: string): string[] => {
-  const prefixLower = prefix.toLowerCase();
-  return allCountries
-    .filter(country => country.toLowerCase().startsWith(prefixLower))
-    .map(country => country);
+const filterArrayByWord = (elements: string[], word: string): string[] => {
+  const prefixLower = word.toLowerCase();
+  return elements
+    .filter(element => element.toLowerCase().includes(prefixLower))
+    .map(element => element);
 };
 
 const CountrySlice = createSlice({
@@ -16,8 +16,8 @@ const CountrySlice = createSlice({
   initialState: {countries: allCountries},
   reducers: {
     updateCountries(state, action) {
-      const prefix: string = action.payload;
-      state.countries = prefix.length > 0 ? filterCountriesByPrefix(prefix) : allCountries;
+      const word: string = action.payload;
+      state.countries = word.length > 0 ? filterArrayByWord(allCountries, word) : allCountries;
     }
   },
 });
