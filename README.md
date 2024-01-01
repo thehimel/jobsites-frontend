@@ -19,5 +19,13 @@ npm run dev
 ## Installed Dependencies
 
 * `npm install react-redux @reduxjs/toolkit`
+* `npm install bootstrap@5.3.2`
 
 > Redux core is included in `@reduxjs/toolkit`,
+
+## Resources
+
+* [Bootstrap 5 Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+* [Bootstrap 5 Examples](https://getbootstrap.com/docs/5.3/examples/)
+* [Bootstrap Icons](https://icons.getbootstrap.com/)
+
