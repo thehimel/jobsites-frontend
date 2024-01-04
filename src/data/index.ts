@@ -1,5 +1,5 @@
-type Countries = { [key: string]: string; }
-type Urls = { base: string; countries: Countries }
-type JobBoard = { name: string; urls: Urls; }
+type Countries = { [key: string]: { name: string }; }
+type RegionalUrl = { [key: string]: string; }
+type JobBoard = { name: string; urls: RegionalUrl; }
 type JobBoards = { [key: string]: JobBoard; }
 type TopJobBoards = { [key: string]: JobBoard[]; }

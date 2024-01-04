@@ -7,8 +7,10 @@ interface JobBoardsProps {
 }
 
 export default function JobBoards({countryCode}: JobBoardsProps) {
+  countryCode = countryCode.toUpperCase();
   const jobBoards = topJobBoards[countryCode].map(
-    (element: JobBoard) => <JobBoard name={element.name} url={element.urls.countries[countryCode]}></JobBoard>
+    (element: JobBoard) => <JobBoard key={element.name} name={element.name}
+                                     url={element.urls[countryCode]}></JobBoard>
   );
 
   return (
