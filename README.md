@@ -20,7 +20,7 @@ npm run dev
 
 * `npm install react-redux @reduxjs/toolkit`
 * `npm install bootstrap@5.3.2`
-* `npm i countries-list`
+* `npm i countries-list` -> removed
 
 > Redux core is included in `@reduxjs/toolkit`.
 

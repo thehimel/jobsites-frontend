@@ -1,7 +1,7 @@
 import {jobBoards} from "./JobBoards.ts";
 
 export const topJobBoards: TopJobBoards = {
-  us: [
+  US: [
     jobBoards.indeed,
     jobBoards.linkedin,
     jobBoards.careerbuilder,
@@ -11,7 +11,7 @@ export const topJobBoards: TopJobBoards = {
     jobBoards.getwork,
     jobBoards.flexjobs,
   ],
-  uk: [
+  UK: [
     jobBoards.indeed,
     jobBoards.linkedin,
     jobBoards.monster,
