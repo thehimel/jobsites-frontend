@@ -8,7 +8,7 @@ const JobBoard = ({name, url}: JobBoardProps) => {
     <div className="col g-2">
       <a className="text-bg-dark rounded-3 w-100 h-100 p-5 text-decoration-none" type="button" href={url}
          target="_blank">
-        <h2>{name}</h2>
+        <h3>{name}</h3>
       </a>
     </div>
   );
