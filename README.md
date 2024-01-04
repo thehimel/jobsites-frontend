@@ -13,7 +13,7 @@ npm run dev
 ## How the Project with Initialized
 
 * `npm init vite@latest core --template react`
-  * `Select a framework: › React` 
+  * `Select a framework: › React`
   * `Select a variant: › TypeScript + SWC`
 
 ## Installed Dependencies
@@ -22,11 +22,10 @@ npm run dev
 * `npm install bootstrap@5.3.2`
 * `npm i countries-list`
 
-> Redux core is included in `@reduxjs/toolkit`,
+> Redux core is included in `@reduxjs/toolkit`.
 
 ## Resources
 
 * [Bootstrap 5 Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 * [Bootstrap 5 Examples](https://getbootstrap.com/docs/5.3/examples/)
 * [Bootstrap Icons](https://icons.getbootstrap.com/)
-
