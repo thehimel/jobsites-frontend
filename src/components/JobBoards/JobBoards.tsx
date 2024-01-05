@@ -18,7 +18,9 @@ export default function JobBoards() {
       <div className="text-center pt-4">
         <h4 className="d-inline-block text-bg-dark rounded px-4 py-2">
           {title}
-          <a href="/" className="ps-2"><span className="badge text-bg-secondary">Go Back</span></a>
+          <a href="/" className="ps-2">
+            <span className="badge text-bg-warning">Go Back <i className="bi bi-arrow-counterclockwise"></i></span>
+          </a>
         </h4>
       </div>
       <div className={rowClasses}>
