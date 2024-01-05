@@ -1,12 +1,16 @@
+import {useDispatch} from "react-redux";
+import {Dispatch} from "redux";
+import {CountryActions} from "../../store/CountrySlice.ts";
+
 interface CountryProps {
   code: string,
   name: string;
 }
 
 const Country = ({code, name}: CountryProps) => {
-  function handleClick(country: string): void {
-    console.log(country);
-  }
+  const dispatch: Dispatch = useDispatch()
+
+  const handleClick = (code: string) => dispatch(CountryActions.updateSelectedCode(code));
 
   return (
     <div className="col g-2">

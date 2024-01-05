@@ -1,9 +1,11 @@
 import React from 'react';
+import {Dispatch} from "redux";
 import {useDispatch} from "react-redux";
 import {CountryActions} from "../../store/CountrySlice.ts";
 
+
 export default function SearchCountries() {
-  const dispatch = useDispatch();
+  const dispatch: Dispatch = useDispatch();
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => dispatch(
     CountryActions.updateCountries(event.target.value)
   );
