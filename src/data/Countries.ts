@@ -13,4 +13,8 @@ export const countries: Countries = {
   US: {name: "United States"},
 }
 
+export function getCountryNameFromCode(code: string): string {
+  return countries[code].name;
+}
+
 export const countryCodes: string[] = Object.keys(countries);

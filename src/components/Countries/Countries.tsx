@@ -1,12 +1,12 @@
-import Country from "./Country.tsx";
 import {useSelector} from "react-redux";
-import {rootState} from "../../constants/core.tsx";
 import {rowClasses} from "../Styles.ts";
+import {CountriesState} from "../../constants/core.tsx";
+import Country from "./Country.tsx";
 
 export default function Countries() {
-  const countries = useSelector((state: rootState) => state.country.countries);
-  const countryButtons = countries.map(
-    (name: string) => <Country key={name} title={name}></Country>
+  const countries: Countries = useSelector((state: CountriesState) => state.country.countries);
+  const countryButtons = Object.entries(countries).map(
+    ([code, country]) => <Country key={code} code={code} name={country.name}></Country>
   );
 
   return (

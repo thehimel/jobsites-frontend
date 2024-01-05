@@ -1,18 +1,23 @@
 import {createSlice} from '@reduxjs/toolkit';
 import {slices} from "./slices.ts";
-import {filterArrayByWord} from "../scripts/utilities.tsx";
+import {findCountriesByWord} from "../scripts/utilities.tsx";
 import {countries} from "../data/Countries.ts"
-
-const allCountries: string[] = Object.values(countries).map(country => country.name);
+import {topJobBoards} from "../data/TopJobBoards.ts";
 
 const CountrySlice = createSlice({
   name: slices.country,
-  initialState: {countries: allCountries},
+  initialState: {countries: countries, selectedCode: ''},
   reducers: {
-    updateCountries(state, action) {
+    updateCountries(state, action): void {
       const word: string = action.payload;
-      state.countries = filterArrayByWord(allCountries, word);
-    }
+      state.countries = findCountriesByWord(countries, word);
+    },
+    updateSelectedCode(state, action): void {
+      const code: string = action.payload;
+      if (code.toUpperCase() in topJobBoards) {
+        state.selectedCode = action.payload;
+      }
+    },
   },
 });
 

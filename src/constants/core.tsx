@@ -1,7 +1,9 @@
 export const brand: string = "jobsites";
 
-export interface rootState {
+
+export interface CountriesState {
   country: {
-    countries: string[];
-  }
+    countries: Countries;
+    selectedCode: string;
+  },
 }
