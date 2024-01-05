@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <SearchCountries></SearchCountries>
       {selectedCode && <JobBoards></JobBoards>}
+      {!selectedCode && <SearchCountries></SearchCountries>}
       {!selectedCode && <Countries></Countries>}
     </>
   )
